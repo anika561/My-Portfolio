@@ -1,252 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
 body{
-    background-color: #eee;
-    font-family: 'Rubik','Italy';
+    background-color:  #f8a4a1;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/Pleasure\ in\ the\ job\,\ put\ perfection\ in\ the\ work\(1\).png);
+    background-repeat: no-repeat;
 }
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-/* Nav Bar styling*/
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
-.blue{
-    position: fixed;
-    max-width: 1300px;
-    padding: 15 0px;
-    margin: auto;
-    background-color: darkblue;
+ul li.pf{
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
 }
 .nav{
-    background-color: transparent;
-    width: 100%;
-    padding:  15px 0;
-    position: fixed;
-    font-family: 'Rubik',sans-serif;
-    z-index: 1;
+    background-color: #322514;
 }
-.nav .max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.logo{
-    font-size: 35px;
-    color: transparent;
-    font-weight: 600;
-    letter-spacing: 3px;
-}
-.nav li a{
-    color: white;
-    text-decoration: none;
-    list-style-type: none;
+.nav ul{
+    overflow: auto;
+
 }
 .nav li{
-    list-style-type: none;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+    border-radius: 4px;
 }
-
-/*home styling*/
-
-.home{
-    background: url(images/banner.jpg) center no-repeat;
-    opacity: 0.8;
-    height: 100vh;
-    display: flex;
-    color: white;
-    min-height: 500px;
-    font-family: monospace;
+.nav li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: aliceblue;
 }
-.home .home-content .text-1{
-    font-size: 27px;
+div.home-content{
+    margin: 350px;
     text-align: center;
-}
-.home .home-content .text-2{
-    font-size: 35px;
-    font-weight: 600;
-    text-align: center;
-}
-.home .home-content .text-3{
     font-size: 30px;
-    text-align: center;
+    margin-left: 40%;
 }
-.home .home-content .text-3 span{
-    font-size: 30px;
+div.home-content .txt1{
     font-weight: bolder;
-    color: violet;
-    text-decoration: underline;
 }
-
-/*about-me styling*/
-
-.about-me h1{
-    text-align: center;
-    background-color: blue;
-    color: white;
-    font-size: 35px;
-    font-family: fantasy;
-    letter-spacing: 4px;
-}
-.about-me div{
-    margin-left: 43%;
-    font-size: 18px;
+div.home-content .txt2{
+    font-weight: 550;
     font-family: monospace;
-    font-weight: 555;
+    margin-left: -9%;
 }
-.about-me span{
-    font-size: 20px;
-    font-weight: bolder;
-    font-family: 'Rubik';
-    border-left: solid black 1px;
-}
-.about-me img{
-    display: inline-block;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: px;
-}
-/*My Projects*/
-#my-projects h1{
-    background: blue;
-    color: white;
-    font-size: 35px;
+div.home-content .txt3{
     font-family: fantasy;
-    text-align: center;
 }
-#my-projects .projects{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 25px;
-    font-weight: bolder;
-    font-family: monospace;
-}
-.projects a{
-    color: darkblue;
-}
-.projects img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-#my-projects .project-1{
-    border: teal solid;
-    border-radius: 8px;
-    background: rgb(199, 231, 243);
-}
-#my-projects .project-2{
-    border: teal solid;
-    border-radius: 8px;
-    background: rgb(199, 231, 243);
-}
-#my-projects .project-3{
-    border: teal solid;
-    border-radius: 8px;
-    background: rgb(199, 231, 243);
-}
-#my-projects .project-4{
-    border: teal solid;
-    border-radius: 8px;
-    background: rgb(199, 231, 243);
-}
-
-/*my-projects hover effects*/
-
-.project-1:hover{
-    transform: scale(1.1);
-    transition: 1000ms;
-    transition-property: all;
-    transition-timing-function: ease-in;
-    box-shadow: 3px 4px 3px darkblue;
-    height: 365px;
-}
-.project-2:hover{
-    transform: scale(1.1);
-    transition: 1000ms;
-    transition-property: all;
-    transition-timing-function: ease-in;
-    box-shadow: 3px 4px 3px darkblue;
-    height: 365px;
-}
-.project-3:hover{
-    transition: 1000ms;
-    transition-property: all;
-    transition-timing-function: ease-in;
-    transform: scale(1.1);
-    box-shadow: 3px 4px 3px darkblue;
-    height: 365px;
-}
-.project-4:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-    transition-property: all;
-    transition-timing-function: ease-in;
-    box-shadow: 3px 4px 3px darkblue;
-    height: 365px;
-}
-
-/*Contact Me*/
-h1{
-    background-color: darkblue;
-    color: white;
-    font-size: 35px;
-    font-family: fantasy;
-    text-align: center;
-}
-.contact-me .contacts{
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.contacts img{
-    display: block;
-    margin: auto;
-}
-.contact-me .contacts{
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.contacts a{
-    align-items: center;
-}
-.contact-me div .e-mail{
-    
-    width: 350px;
-    height: 200px;
-    border: black 3px solid;
-    border-radius: 3px;
-    margin-left: 10%;
-    background-color: cadetblue;
-}
-.contact-me div .github{
-    
-    width: 350px;
-    height: 200px;
-    border: black 3px solid;
-    border-radius: 3px;
-    background-color: cadetblue;
-
-}
-.contacts a{
-    color: snow;
-    font-size: large;
-}
-.contacts span{
-    font-size: larger;
+div.home-content .txt4{
+    font-weight: bold;
     text-decoration: underline;
-}
-@media(max-width: 300px){
-    
 }
